@@ -2,4 +2,184 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.fancy-text {
+    font-family: "Imperial Script";
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+/* -------------------- Navigation Bar -------------------- */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(white 80%, rgb(230, 230, 230));
+    box-shadow: rgba(99, 99, 99, 0.685) 0px 2px 8px 0px;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+
+}
+
+.nav-list li {
+    font-family: "Libre Baskeville", serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li:hover {
+    box-shadow: rgba(99, 99, 99, 0.685) 0px 2px 8px 0px;
+}
+
+/* -------------------- Welcome Section -------------------- */
+.welcome-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.welcome-text {
+    font-family: "Fjalla One", Helvetica;
+}
+
+.welcome-text .intro {
+    font-size: 5rem;
+}
+
+.welcome-text .name {
+    font-size: 7rem;
+}
+
+.welcome-text .occupation {
+    font-size: 3rem;
+    font-family: "Libre Baskeville", serif;
+}
+
+.profile-pic {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic p {
+    font-size: 5em;
+    font-family: "Libre Baskeville", serif;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-section {
+        padding-top: 30%;
+    }
+}
+
+/* -------------------- Projects Section -------------------- */
+
+.projects {
+    padding: 5% 10%;
+}
+
+.project-header {
+    font-family: "Libre Baskeville", serif;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.project-title {
+    font-family: "Libre Baskeville", serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.project-tile {
+    background-color: rgb(232, 232, 232);
+    text-decoration: none;
+    color: black;
+}
+
+.project-tile:hover {
+    box-shadow: rgba(99, 99, 99, 0.685) 0px 2px 8px 0px;
+    scale: 1.05;
+}
+
+/* -------------------- Contact Section -------------------- */
+
+.contact-section {
+    padding: 10% 5% 20% 5%;
+}
+
+.contact-header {
+    font-family: "Libre Baskeville", serif;
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.contact-tile {
+    font-family: "Libre Baskeville", serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.contact-tile:hover {
+    box-shadow: rgba(99, 99, 99, 0.685) 0px 2px 8px 0px;
 }
